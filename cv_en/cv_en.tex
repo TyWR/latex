@@ -1,0 +1,187 @@
+% -- Encoding UTF-8 without BOM
+% -- XeLaTeX => PDF (BIBER)
+
+\documentclass[]{cv-style}          % Add 'print' as an option into the square bracket to remove colours from this template for printing. 
+\sethyphenation[variant=british]{english}{} % Add words between the {} to avoid them to be cut
+
+
+\begin{document}
+\header{Tanguy}{ VIVIER}
+%
+\begin{aside}
+%
+\section{CONTACT} \vspace{0.1cm}
+Tél: +33 6 33 05 90 61
+tanguy.viv@gmail.com
+%
+\section{ADDRESS} \vspace{0.1cm}
+136 Chemin de Rosset,
+Saint-Jeoire Prieuré,
+73190,
+France
+%
+\section{INFO} \vspace{0.1cm}
+French
+22 years old
+Driver License
+Workplace First-Aider
+%
+\section{LINKS} \vspace{0.1cm}
+\href{https://github.com/TyWR}{Github: TyWR}
+\href{https://www.linkedin.com/in/tanguy-vivier/}{Linkedin}
+\href{https://tywr.github.io/}{Website}
+%
+\section{LANGUAGES} \vspace{0.1cm}
+French (native)
+English (fluent)
+%
+\section{TOOLS} \vspace{0.1cm}
+Linux/MacOS
+NeoVim
+ZSH
+\LaTeX{}
+%
+\section{HOBBIES} \vspace{0.1cm}
+Music
+(Bass and Drums)
+Swimming
+Travelling
+Cooking
+%
+\end{aside}
+%
+% =============================================================================
+%
+\vspace{0.12cm}
+\section{TECHNICAL SKILLS}
+\vspace{-0.3cm}
+%
+Strong knowledge in applied Mathematics (Machine-Learning, Statistics, Signal Processing, Optimization, Calculus...) and Computer Science. Experience in medium-scale software engineering projects involving data-science and signal processing skills. \\[0.1cm] 
+\textbf{DATA-SCIENCE:} \\[0.1cm]
+\begin{entrylist}
+\entry
+{Proficient}
+{
+{\normalfont Python (Matplotlib, SkLearn, Numpy, Pandas, Flask)}}{}{\vspace{-0.6cm}}
+\entry
+{Familiar}
+{
+{\normalfont Matlab, R, d3.js, PyTorch}}{}{\vspace{-0.5cm}}
+\entry
+{Knowledge}
+{
+{\normalfont Tensorflow, Spark, Hadoop, AWS S3, Redshift}}{}{}
+\end{entrylist}
+\vspace{-0.5cm}\\
+\textbf{SOFTWARE ENGINEERING:} \\[0.1cm]
+\begin{entrylist}
+\entry
+{Proficient}
+{
+{\normalfont git, Unix}}{}{\vspace{-0.6cm}}
+\entry
+{Familiar}
+{
+{\normalfont SQL, Docker, C/C++, bash, JavaScript, HTML/CSS, Parallel Processing}}{}{\vspace{-0.5cm}}
+\entry
+{Knowledge}
+{
+{\normalfont Haskell, Scala}}{}{\vspace{-0.5cm}}
+\end{entrylist}
+\section{CURRICULUM}
+%
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2016-2019}
+{INGENIEUR CIVIL DES MINES \\ MASTER OF SCIENCE AND EXECUTIVE ENGINEERING\\
+{\normalfont 
+One of France's top Master’s level engineering schools.
+Multidisciplinary approach that harmoniously blends basic scientific and technical education, technological education, and a solid initiation to the economic, social and human realities of industry. \hspace{11cm}}}
+{Ecole Nationale Supérieure des Mines de Nancy, France}
+{\vspace{-0.3cm}}
+%------------------------------------------------
+\entry
+{2018}
+{ERASMUS EXCHANGE \\{\normalfont 
+Semester abroad during my engineering master degree in France within the faculty of Information Technology and Electrical Engineering\hspace{4cm}}}
+{NTNU Trondheim, Norway}
+{\vspace{-0.3cm}}
+%------------------------------------------------
+\entry
+{2014-2016}
+{CLASSES PREPARATOIRES AUX GRANDES ECOLES \\{\normalfont Preparatory class to take national competitive exams for admission to the highly selective French engineering schools "Grandes écoles". Mathematics, Physics, IT.}}
+{Lycée Berthollet, Annecy, France}
+{}
+%------------------------------------------------
+\end{entrylist}
+%
+% =============================================================================
+%
+\vspace{-0.6cm}
+\section{EXPERIENCES}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+  {Feb. 2019}
+  {SOFTWARE ENGINEER / DATA SCIENTIST (6 MONTHS)}
+  {Geneva, Switzerland}
+  {\jobtitle{Fondation Campus Biotech Geneva}\\
+ $\circ$ Developing user-friendly softwares for neurophysiological data analysis, with a focus on frequency and time-frequency analysis, source separation (PCA, ICA...).\\
+  $\circ$ Developing large scale computing workflows using parallel processing and their deployment tools (Docker).\\
+  \textbf{Utilized} git, Python for data analysis and user interface, Docker.
+  \vspace{0.2cm}
+  }
+%------------------------------------------------
+\entry
+  {Jun. 2018}
+  {SHORT INTERNSHIP (2 months)}
+  {Kyushu, Iizuka, Japan}
+  {\jobtitle{Kyutech}\\
+  Research internship on the subject of spintronics, at the FUKUMA Laboratory, by carrying out experiments and data analysis. 
+  \vspace{0.2cm}
+  }
+%------------------------------------------------
+\entry
+  {2017-2018}
+  {JUNIOR-ENTERPRISE CONSULTING}
+  {Nancy, France}
+  {\jobtitle{Mines Services}\\
+  Internal auditor of a student association in charge of giving consulting work to clients by giving missions to students.\\
+}
+\end{entrylist}
+%
+%------------------------------------------------------------------------------
+%
+\newpage
+\hphantom\\
+\section{PROJECTS}
+  \textbf{OPEN SOURCE VISUALIZATION TOOL FOR EEG DATA-ANALYSIS}\\
+  \url{https://github.com/fcbg-hnp/mnelab}\\
+  $\circ$ Carrying out the development of an open-source graphical user interface to visualize and process raw neurophysiological data. The goal was to present an easy-to-use interface for researchers to easily perform complex tasks such as cleaning the data, filtering, applying complex signal processing methods and visualizing data. It featured development of custom visualizations and interfaces for spectral analysis (PSD and spectrograms) and source-separation (ICA).\\
+  $\circ$ Contributing to a wide open-source project for neurophysiological data processing.\\
+  $\circ$ Working alongside researchers to identify needs and bottlenecks in the user experience of the product.The software is now being used by researchers at Campus Biotech to process their data.\\
+  \textbf{Utilized:} Python (PyQT, Matplotlib for interactive graphs, Numpy MNE), advanced signal processing\\[0.4cm]
+  %
+  \textbf{FOOTBALL TOURNAMENT PREDICTION}\\
+  Modelling a football tournament using Poisson regression models by giving teams offensive and defensive attributes, and simulating outcomes to predict the winner. At the end of the project, we were able to give a probability of winning for each team with a confidence interval. The project involved the transformation of the raw data and the conception of a model.\\
+  \textbf{Utilized:} R, Advanced Regression Models, Monte-Carlo Simulations\\[0.4cm]
+  %
+ \textbf{ROOM HEATING OPTIMIZATION}\\
+ The goal of this project over the span of a year, was to find an optimal polygon shaped room (square, pentagon etc.), in order to maximize the average temperature.\\
+ $\circ$ Modelling the situation with heat equation, using adaptive meshes\\
+ $\circ$ Developing optimization algorithms from scratch\\
+ \textbf{Utilized:} Python, Matlab, Matlab to Python pipeline\\[0.4cm]
+ %
+  \textbf{AURORA FORECAST VISUALIZATION}\\
+  \url{https://northern-lights.herokuapp.com/}\\
+  Personal project involving the development of a website for that displays the northern lights forecast on an interactive map. The application extracts, transform and displays external data from the U.S SPWC.\\
+  \textbf{Utilized:} Python (Flask), d3.js\\[0.4cm]
+  %
+\section{REFERENCES}
+    \textbf{Gwénaël BIROT} \\
+    EEG/BCI Platform Manager, \\
+    Fondation Campus Biotech Geneva,\\
+    \url{gwenael.birot@fcbg.ch}
+%
+\end{document}
