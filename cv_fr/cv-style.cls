@@ -79,7 +79,10 @@
 
 \newcommand{\header}[2]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=2cm] (box) at (current page.north){};
+    \draw[fill=fillheader] (-6,0.3) rectangle (\paperwidth,10);
+    \node [rectangle, fill=fillheader, anchor=north, 
+	      minimum width=\paperwidth, 
+		 minimum height=2cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
       \fontsize{30pt}{65pt}\color{header}%
       {\lightfont #1}{\headingfont  #2}

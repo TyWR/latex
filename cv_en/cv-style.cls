@@ -11,13 +11,13 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 % Colors %
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 \RequirePackage{xcolor}
 
-\definecolor{white}{RGB}{255,255,255}
+\definecolor{white}{HTML}{eceff4}
 
 \definecolor{darkgray}{HTML}{434C5e}
 \definecolor{gray}{HTML}{2E3440}
@@ -39,18 +39,18 @@
   \colorlet{green}{gray}
   \colorlet{purple}{gray}
   \colorlet{aquamarine}{gray}
-  \colorlet{fillheader}{white}
+  \colorlet{fillheader}{gray}
   \colorlet{header}{gray}
 \else
   \colorlet{fillheader}{gray}
   \colorlet{header}{white}
 \fi
 \colorlet{textcolor}{gray}
-\colorlet{headercolor}{gray}
+\colorlet{headercolor}{darkgray}
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 % Fonts %
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX]{unicode-math}
@@ -71,27 +71,31 @@
     {\color{gray}\bodyfontit #1}%
 }
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 % Header %
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 \RequirePackage{tikz}
 
 \newcommand{\header}[2]{%
-  \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=2cm] (box) at (current page.north){};
-    \node [anchor=center] (name) at (box) {%
-      \fontsize{30pt}{65pt}\color{header}%
-      {\lightfont #1}{\headingfont  #2}
-    };
+    \begin{tikzpicture}[remember picture,overlay]
+	   \draw[fill=fillheader] (-6,-0.3) rectangle (\paperwidth,10); 
+
+	   \node [rectangle, fill=fillheader,
+		     anchor=north, minimum width=\paperwidth, 
+	          minimum height=2cm] (box) at (current page.north){};
+	   \node [anchor=center] (name) at (box) {%
+		  \fontsize{28pt}{50pt}\color{header}%
+		  {\lightfont #1}{\headingfont  #2}
+	   };
   \end{tikzpicture}
   \vspace{1cm}
   \vspace{-2\parskip}
 }
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 %	Last updated command %
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 \RequirePackage[absolute,overlay]{textpos}
 \RequirePackage{polyglossia}
@@ -119,9 +123,9 @@
     \lastupdatedtext{} \today
   \end{textblock}}
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 % Structure %
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 \RequirePackage{parskip}
 
 \newcounter{colorCounter}
@@ -162,9 +166,9 @@
 
 \pagestyle{empty}
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 % List environment %
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 \setlength{\tabcolsep}{0pt}
 \newenvironment{entrylist}{%
@@ -181,9 +185,9 @@
     #4\vspace{\parsep}%
   }\\}
   
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 % Side block %
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 \setlength{\TPHorizModule}{1cm}
 \setlength{\TPVertModule}{1cm}
@@ -202,9 +206,9 @@
   \let\section\oldsection
 }
 
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 % Other tweaks %
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 \RequirePackage[left=5.6cm,top=1cm,right=1cm,bottom=1cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
