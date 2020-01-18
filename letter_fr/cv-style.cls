@@ -3,7 +3,7 @@
 \ProvidesClass{cv-style}[2015/02/27 CV class]
 \NeedsTeXFormat{LaTeX2e}
 
-\DeclareOption{english}{\def\@cv@espanol{}}
+\DeclareOption{french}{\def\@cv@espanol{}}
 \DeclareOption{print}{\def\@cv@print{}}
 \DeclareOption*{%
   \PassOptionsToClass{\CurrentOption}{article}%
@@ -79,9 +79,12 @@
 
 \newcommand{\header}[2]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=2cm] (box) at (current page.north){};
+    \draw[fill=fillheader] (-6,0.3) rectangle (\paperwidth,10);
+    \node [rectangle, fill=fillheader, anchor=north, 
+	      minimum width=\paperwidth, 
+		 minimum height=2cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
-      \fontsize{30pt}{65pt}\color{header}%
+      \fontsize{25pt}{65pt}\color{header}%
       {\lightfont #1}{\headingfont  #2}
     };
   \end{tikzpicture}
@@ -101,13 +104,8 @@
     \hyphenation{#3}\end{otherlanguage}}}
 %\sethyphenation[<options>]{<language>}{<list of words separated by spaces>}
 
-\ifdefined\@cv@espanol
-  \setdefaultlanguage{spanish}
-  \def\lastupdatedtext{Última Actualización el}
-\else
 \setdefaultlanguage{french}
   \def\lastupdatedtext{Last Updated on}
-\fi
 
 \setlength{\TPHorizModule}{0.01\paperwidth}
 \setlength{\TPVertModule}{0.01\paperwidth}
@@ -180,12 +178,12 @@
     {\small\addfontfeature{Color=lightgray} #3}\\%
     #4\vspace{\parsep}%
   }\\}
-  
+
 %----------------------------------------------------------------------------------------
 % Other tweaks %
 %----------------------------------------------------------------------------------------
 
-\RequirePackage[left=3cm,top=1cm,right=3cm,bottom=1cm,nohead,nofoot]{geometry}
+\RequirePackage[left=2.2cm,top=1cm,right=2.2cm,bottom=1cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
 \hypersetup{
     pdftitle=CV/Resume \textbar{} Tanguy VIVIER,

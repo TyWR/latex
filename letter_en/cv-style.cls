@@ -79,9 +79,12 @@
 
 \newcommand{\header}[2]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=2cm] (box) at (current page.north){};
+    \draw[fill=fillheader] (-6,0.3) rectangle (\paperwidth,10);
+    \node [rectangle, fill=fillheader, anchor=north, 
+	      minimum width=\paperwidth, 
+		 minimum height=2cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
-      \fontsize{30pt}{65pt}\color{header}%
+      \fontsize{25pt}{65pt}\color{header}%
       {\lightfont #1}{\headingfont  #2}
     };
   \end{tikzpicture}
@@ -180,12 +183,12 @@
     {\small\addfontfeature{Color=lightgray} #3}\\%
     #4\vspace{\parsep}%
   }\\}
-  
+
 %----------------------------------------------------------------------------------------
 % Other tweaks %
 %----------------------------------------------------------------------------------------
 
-\RequirePackage[left=3cm,top=1cm,right=3cm,bottom=1cm,nohead,nofoot]{geometry}
+\RequirePackage[left=2.2cm,top=1cm,right=2.2cm,bottom=1cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
 \hypersetup{
     pdftitle=CV/Resume \textbar{} Tanguy VIVIER,
