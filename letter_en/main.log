@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2020.1.15)  18 JAN 2020 21:38
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2020.1.15)  18 JAN 2020 21:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -974,19 +974,19 @@ LaTeX Info: Redefining \nameref on input line 6.
 \openout4 = `main.out'.
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.00018pt on input line 19.
+(Font)              scaled to size 12.00018pt on input line 21.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.00012pt on input line 19.
+(Font)              scaled to size 8.00012pt on input line 21.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00009pt on input line 19.
+(Font)              scaled to size 6.00009pt on input line 21.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.99982pt on input line 19.
+(Font)              scaled to size 11.99982pt on input line 21.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.99988pt on input line 19.
+(Font)              scaled to size 7.99988pt on input line 21.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99991pt on input line 19.
+(Font)              scaled to size 5.99991pt on input line 21.
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--54
+Underfull \hbox (badness 10000) in paragraph at lines 26--56
 
  []
 
@@ -995,11 +995,11 @@ File: signature.jpg Graphic file (type bmp)
 [1
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
  (./main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 61.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 63.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E.
  ) 
