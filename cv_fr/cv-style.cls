@@ -55,17 +55,17 @@
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX]{unicode-math}
 
-\newfontfamily\bodyfont{Rubik-Medium.ttf}[Path=fonts/]
-\newfontfamily\bodyfontit{Rubik-Italic.ttf}[Path=fonts/]
-\newfontfamily\thinfont{Rubik-Light.ttf}[Path=fonts/]
-\newfontfamily\headingfont{Rubik-Medium.ttf}[Path=fonts/]
-\newfontfamily\condensedfont{Rubik-Medium.ttf}[Path=fonts/]
-\newfontfamily\lightfont{Rubik-Light.ttf}[Path=fonts/]
+\newfontfamily\bodyfont{Play-Regular.ttf}[Path=fonts/]
+\newfontfamily\bodyfontit{Play-Regular.ttf}[Path=fonts/]
+\newfontfamily\thinfont{Play-Regular.ttf}[Path=fonts/]
+\newfontfamily\headingfont{Play-Bold.ttf}[Path=fonts/]
+\newfontfamily\condensedfont{Play-Regular.ttf}[Path=fonts/]
+\newfontfamily\lightfont{Play-Regular.ttf}[Path=fonts/]
 
 
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor, Path = fonts/]{Rubik-Light}
+\setmainfont[Mapping=tex-text, Color=textcolor, Path = fonts/]{Play-Regular.ttf}
 
 \newcommand{\italica}[1]{%
     {\color{gray}\bodyfontit #1}%
