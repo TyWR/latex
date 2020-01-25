@@ -23,7 +23,10 @@
 \definecolor{gray}{HTML}{2E3440}
 \definecolor{lightgray}{HTML}{4C566a}
 
-\definecolor{blue}{HTML}{5e81ac}
+\definecolor{blue1}{HTML}{5e81ac}
+\definecolor{blue2}{HTML}{81a1c1}
+\definecolor{blue3}{HTML}{88c0d0}
+\definecolor{blue4}{HTML}{8fbcbb}
 \definecolor{red}{HTML}{BF616A}
 \definecolor{orange}{HTML}{D08770}
 \definecolor{green}{HTML}{A3BE8C}
@@ -133,10 +136,10 @@
   {%
     \color{%
       \ifcase\value{colorCounter}%
-        blue\or%
-        red\or%
-        orange\or%
-        green\or%
+	   blue1\or%
+	   blue2\or%
+	   blue3\or%
+	   blue4\or%
         purple\or%
         aquamarine\else%
         headercolor\fi%
